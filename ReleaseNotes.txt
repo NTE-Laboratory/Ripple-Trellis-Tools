@@ -1,0 +1,530 @@
+﻿#################################################################
+#
+#    Trellis Suite Release Notes
+#    contact: support@rppl.com
+#
+#################################################################
+
+[1.14.2] 2022/02/15
+=================================================================
+*** NOTE: REQUIRES Ripple Software Version 1.14.x ***
+=================================================================
+Feature:          Trellis - Added ability to select whether Trellis 
+                            disables global stim flag on a pin when 
+                            stopping a pattern.
+Feature:          Trellis - Parallel port data is now included in EDF 
+                            annotation data.
+Feature:          Trellis - Default file save path by date will now 
+                            update automatically. 
+Feature:          Trellis - Added command line option to override the 
+                            port used to open/write log files.
+Feature:          Trellis - User can now check/uncheck the Start/Stop 
+                            tone while a recording is in session.
+Feature:          Trellis - Load Channel Map default folder now matches 
+                            the default Save Map folder.
+Feature:          Trellis - Added support for R04677 implant.
+Feature:          Trellis - Added support for up to 10 cameras simultaneously.
+Feature:          Trellis - Added support for R04678 Transceiver.
+Bug Fix:          Trellis - *.ns3 files are no longer automatically
+                            saved regardless of selection.
+Bug Fix:          Trellis - Prevent Trellis from hanging and/or 
+                            crashing when left (or right) clicking on 
+                            NIP in Instrument Panel.
+Bug Fix:          Trellis - Spike Scope now launches reliably.
+Bug Fix:          Trellis - Trellis will now report if a needed network 
+                            port required for the log file is able to 
+                            open properly.
+Bug Fix:          Trellis - Fixed error in min/max values when exporting 
+                            EDF data from *.nfx files.
+Bug Fix:          Trellis - Added Restore Default button to File Save UI.
+Bug Fix:          Trellis - Set All Front Ends of same type option in 
+                            Hardware Config screen will now only appear 
+                            if a configurable property exists.
+
+[1.14.1] 2021/08/09
+=================================================================
+*** NOTE: REQUIRES Ripple Software Version 1.14.x ***
+=================================================================
+Feature:          Trellis - R03745 transceiver is now supported
+Feature:          Trellis - Task tray notifications added for 
+                            recording/pausing/stopping
+Feature:          Trellis - Added ability to enable/disable task tray 
+                            notifications
+Feature:          Trellis - Default maps files for Ripple Caps are 
+                            now included in Trellis build
+Feature:          Trellis - Log file now includes commands that start, 
+                            pause, or stop saving data
+Feature:          Trellis - User can now modify all ADC settings for 
+                            Front Ends of same type
+Feature:          Trellis - EDF output is now exported from *.nxx/*.nev 
+                            file(s) as a post process to maintain 
+                            data precision
+Feature:          Trellis - Camera recording now defaults to enabled 
+                            when a camera is connected
+Feature:          Trellis – Added ‘Ripple_Sample_Data_Set_v2’ to 
+                            ../Users/../Trellis/sampleData folder
+Bug Fix:          Trellis - Fixed EDF output error with mapped pins
+Bug Fix:          Trellis - Min/Max values for *.nfx files are now 
+                            correct
+Bug Fix:          Trellis - EDF pin labels more adequately represent 
+                            Front End pin IDs
+Bug Fix:          Trellis - Files selected in EDF export is now respected.
+Bug Fix:          Trellis - Non ascii characters can now be used for 
+                            saving data
+Bug Fix:          Trellis - Setting filters avoids sending unnecessary 
+                            messages to the NIP
+Bug Fix:          Trellis - Implant status stream conversion factors 
+                            are now correct
+Bug Fix:       Neuroshare – Updated Matlab Neuroshare toolbox to be more 
+                            compatible with *.nfx streams
+
+[1.14.0] 2021/06/30
+=================================================================
+*** NOTE: REQUIRES Ripple Software Version 1.14.x ***
+=================================================================
+Feature:          Trellis - All Front End pins in File Save screen 
+                            will be selected by default when a stream 
+                            is enabled
+Feature:          Raster  - Time divisions in Raster menu are selectable
+Feature:          Trellis - Analog and Digital input pins can be mapped
+Feature:          Raster  - Ability to create and modify map file 
+Feature:          Trellis - Ability to create and modify map file 
+Feature:          Trellis - Ubuntu 20.04 OS is now supported
+Feature:          Trellis - Xippmin removed from build
+Bug Fix:          Trellis - When selecting 'Days' in the 'Stop After' on 
+                            File Save screen, the value will no longer 
+                            revert to 0
+Bug Fix:          Trellis - The min/max uV values for *.nfx files 
+                            is now respected
+Bug Fix:          Trellis - The Units for min/max voltage for EDF+
+                            files will auto adjust to ensure the value
+                            remains confined to a 16 bit value
+Bug Fix:          Trellis - Ensure last event is not lost when merging 
+                            annotation data into EDF+ file
+Bug Fix:          Trellis - Filter selection menu reliably sets filters
+Bug Fix:          Trellis - Fixed issue with remote File save (from versions 1.13.2 and 1.13.3) 
+Bug Fix:        Impedance - All channels can be viewed when channels are mapped
+Bug Fix:        Impedance - Prevent crash if a map file is missing positional information
+
+[1.13.3] 2021/01/24
+=================================================================
+*** NOTE: REQUIRES Ripple Software Version 1.13.x ***
+=================================================================
+Feature:          Trellis - support for Explorer Summit processor
+Feature:          Trellis - support for EEG+tES front end
+Feature:          Trellis - support for Explorer AIO/DIO/PhysioD
+
+[1.13.2] 2020/12/16
+=================================================================
+*** NOTE: REQUIRES Ripple Software Version 1.13.x ***
+=================================================================
+Feature:          Trellis - Continuous Impedance Measurement
+Feature:          Trellis - Enable Visualization of Impedance in 2D map
+Feature:          Trellis - Save to EDF+
+Feature:          Trellis - New Filter Selection UI 
+Feature:          Trellis - Set Default Instrument Configuration on Load
+Feature:          Trellis - Gen 3 Processor Support
+Feature:           Raster - Sort Channel List Multiple Ways
+Feature:           Raster - Allow stream type label to be hidden
+Bug Fix:          Trellis - File save via digital trigger now correctly starts selected cameras
+
+
+[1.13.1] 2020/08/18
+=================================================================
+*** NOTE: REQUIRES Ripple Software Version 1.13.x ***
+=================================================================
+Feature:          Trellis - Add Support for Macro and Macro+Stim Front Ends
+Feature:          Trellis - Add Selection/De-selection of multiple signals in Raster
+Feature:          Trellis - Add Load/Save of Raster Views and custom Default
+Bug Fix:          Trellis - Allow support of config files with 18 Front Ends
+
+
+[1.13.0] 2020/03/13
+=================================================================
+*** NOTE: REQUIRES Ripple Software Version 1.13.x ***
+=================================================================
+Feature:          Trellis - Added support for Explorer QuestHD processor
+Feature:          Trellis - Added support for Explorer EEG and ECoG+Stim Front Ends
+Feature:          Trellis - Updated processor icons
+
+
+[1.12.0] 2019/05/14
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.12.x ***
+=================================================================
+Feature: Video Controller - Added Video Controller application with webcam support 
+Feature:          Trellis - Added support for Pico Front Ends
+Bug Fix:          Trellis - Fixed issue where EMG v2, ADIO, and LINK32 configuration settings were not saving properly
+Bug Fix:        Python NS - Fixed bug with timestamp when using 'get_time'
+
+
+[1.11.1] 2018/10/02
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.11.x ***
+=================================================================
+Bug Fix:          Trellis - Fixed issue where config packets could get lapped at high channel counts
+
+
+[1.11.0] 2018/07/02
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.11.x ***
+=================================================================
+Feature:          Trellis - Modifications to LINK32 info display panel to support new Link32 firmware
+Feature:        Impedance - Added support for LINK32
+Bug Fix:           Raster - Fixed issue with signals being displayed out of order across channels
+Bug Fix:          Trellis - Fixed issue where screens not showing on main display when monitor unplugged
+Bug Fix:          Trellis - Fixed issue with SurfS2 features not fully enabled
+Feature:          xippmex - Added support for Impedance and On/Off control for LINK32
+
+
+[1.10.0] 2018/03/26
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.10.x ***
+=================================================================
+Bug Fix:      Stimulation - Fixed issue with micro+stim R-Number check in stim controller
+Bug Fix:      Stimulation - Fixed issue with loading saved stimulation configuration files
+Feature:      Stimulation - Changed max stimulation limit (100 times step size)
+Feature:          Trellis - Added support for new stim lookup method
+Feature:          Trellis - Added support for port trip error reporting in title bar
+Feature         File Save - Added message dialog and warning tone if hardware error is detected during an active recording
+Feature:          xippmex - Added support for new stim lookup method
+Feature:          xippmex - Added support for xipp error messages
+Feature:          xippmex - Changed Stimulation output limits for stim front ends (100 times step size)
+Feature:          xippmex - Added Support for changing spike threshold values
+Bug fix:          xippmex - Fixed issue with potential missrepresenation of Analog inputs
+Bug fix:          xippmex - Fixed issue with missing data having the wrong filler values
+
+
+[1.9.0] 2017/10/18
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.9.x ***
+=================================================================
+Bug Fix:          Trellis - Fixed issue where UDP packets with multiple Xipp packets were being split up by packet forwarder
+Bug Fix:          Trellis - Fixed issue where network was not initializing correctly when network interface adapter changed after Trellis closed
+Bug Fix:          Trellis - Fixed timer access issue that was causing spurious crashes
+Bug Fix:          Trellis - Fided handling of multi-xipp UDP internal routing in when Trellis-processor communication is TCP
+Feature:          Trellis - Added code to reinitialize network if interface change is detected while Trellis is running.
+Feature:          Trellis - Added support for Link32 front end
+Feature:          Trellis - Added support for Nomad processor
+Feature:          Trellis - Added support for ADIO front end
+
+
+[1.8.3] - 2017/05/04
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.8.x ***
+=================================================================
+
+
+[1.8.2] - 2017/04/28
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.8.x ***
+=================================================================
+Bug Fix:          Xippmex - Incorrect scaling for continous data for raw and lfp
+Feature:          Xippmex - Changed format for returned spikes to 2D array, from cell arrays with 1D arrays.
+
+
+[1.8.1] - 2017/04/28
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.8.x ***
+=================================================================
+
+
+[1.8.0] - 2016/12/09
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.7.x ***
+=================================================================
+Feature:          Trellis - TCP network connection to Grapevine and xippmex
+Feature:          Trellis - Wireless connection to Nomad Grapevine
+Feature:          Xippmex - TCP network connection to Grapevine and Trellis
+Feature:          Xippmex - all functions block untill the change is confirmed (or timeout is reached)
+
+
+[1.7.4] - 2016/09/15
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.7.x ***
+=================================================================
+Feature:          Trellis - Support for v2 EMG front end with 7.5 kHz sample rate
+
+
+[1.7.3] - 2016/04/29
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.7.x ***
+=================================================================
+Bug Fix:          Trellis - Fixed how Trellis handles remote control recording requests with invalid start time
+
+
+[1.7.2] - 2016/04/08
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.7.x ***
+=================================================================
+Feature:          Trellis - Support for micro2+stim front ends
+Bug Fix:          Trellis - Fixed error with unintuitive digital routing signal drop down behavior
+
+
+[1.7.1] - 2016/03/24
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.7.x ***
+=================================================================
+Feature:          Trellis - All File Save errors are reported with the same dialog box (not one per error)
+Bug Fix:          Trellis - Loading configs caused spike filter settings to change unexpectedly
+Bug Fix:          Trellis - (Mac) Shared memory not deleted correctly causing problems on Trellis launch
+Bug Fix:      Stimluation - nano2+stim HC front ends (R02014) were not enabled in hardware browser
+
+
+[1.7.0] - 2016/03/14
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.7.x ***
+=================================================================
+Feature:          Trellis - Added warning when front end error is reported by NIP (i.e. when port light turns red)
+Feature:          Trellis - Support for micro2 front end
+Feature:          Trellis - Support for global channel labeling (i.e. to reflect electrode map)
+Feature:          Trellis - Support for syncrhonization of data and recording with 2 NIPs
+Feature:          Trellis - Support for loading nano2+stim stim lookup table data
+Feature:          Trellis - Support for echoing stimulation output to digital output
+Feature:           Raster - Support for showing Digital Output events (when UDP loopback is enabled)
+Feature:      Stimulation - Stimulation interface is disabled (and all stimulation terminated) if astimulation front end reports a hardware error
+Bug Fix:        File Save - The last 2 Digital Input events were being truncated from NEV file
+Bug Fix:        File Save - Playing a tone on recording start and stop was not working
+Bug Fix:           Raster - Spike event display erroneously showed colored ticks, and ticks of varying heights
+Bug Fix:           Raster - Does not show both 30K and 1K continuous Analog I/O signals at same time
+Bug Fix:          xippmin - Example program to control Trellis recording fails to stop recording
+
+
+[1.6.0] - 2015/10/27
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.6.x ***
+=================================================================
+Feature:          Trellis - Support for nano2 front end
+Feature:          Trellis - Support for nano2 HV front end
+Feature:          Trellis - Support for nano2+stim front end
+Feature:          Trellis - Support for configuring nano2 hardware filter low-corner (0.1 Hz - 100 Hz)
+Feature:          Trellis - Support for configuring nano2 and nano2+stim ADC resolution (0.125 uV/bit, 0.25 uV/bit, 0.5 uV/bit)
+Feature:          Trellis - New "Front End Settings" section in Instrument Network tree
+Feature:          Trellis - Enhanced logging (logs saved in ~\Trellis\logFiles directory)
+Feature:          Trellis - Changed gain for EMG front end signals routed through analog i/o.
+Bug Fix:          Trellis - Digital input triggers File Save even when triggering is not enabled  
+Feature:          xippmin - Compiles on Windows (with MinGW GCC)
+Feature:          xippmex - Can now be run on same machine as Trellis
+Feature:          xippmex - Support for changing nano2 and nano2+stim ADC resolution
+Feature:          xippmex - Support for changing nano2 hardware filter low-corner
+Bug Fix:          xippmex - Occassionally the 'trial' command crashed MATLAB
+Bug Fix:       neuroshare - large data sets had overflow of a pointer in nsGetXXData
+Bug Fix:           mksort - Added support for MATLAB 2015a and 2015b
+
+
+[1.5.0] - 2015/03/13
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.5.x ***
+=================================================================
+Feature:        File Save - Support for auto file segmentation (by size or time) during a recording
+Feature:        File Save - Low disk warning and recording auto-stop (when free space < 100MB)
+Feature:        Impedance - Support for impedance measurement with nano front ends (version 2.2 or greater)
+Feature:      Spike Scope - Event waveforms are drawn in a continuous fifo manner (i.e. not cleared when persistence level is reached)
+Feature:       Spike Grid - Event waveforms are drawn in a continuous fifo manner (i.e. not cleared when persistence level is reached)
+Feature:       Spike Grid - An expansion icon is shown on the toolbar whenever toolbar elements are hidden
+Feature:          Trellis - Support for new 24-bit EMG front end in Trellis and all applications
+Bug Fix:           Raster - Second Micro HV does not show up in hardware browser
+Feature:          xippmex - Control of fast-settle added
+Feature:          xippmex - Control of digital i/o 'capture on digital bit change' added
+Feature:          xippmex - Can modify stim sequence 'action' propery in 'stimseq' command
+Bug Fix:          xippmex - 'time' command could return less than zero with long running NIP
+Bug Fix:          xippmex - digital parallel inputs were returned as signed integer
+Bug Fix:          xippmex - rare failures when bad streams were requested with 'signal' command
+
+
+[1.4.3] - 2014/08/28
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.4.x ***
+=================================================================
+Bug Fix:           Raster - Upper 4 channels of analog parallel inputs not showing up correctly  
+Bug Fix:           Raster - Shift+Click channel selection not working for more than 16 channels
+Bug Fix:          Trellis - Added default signal for analog output routing 
+Bug Fix:          Trellis - Digital parallel port file save triggering not restoring from config file correctly
+Feature:       Spike Grid - Adjusted the window width at which toolbar controls are hidden/shown
+
+
+[1.4.2] - 2014/08/08
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.4.x ***
+=================================================================
+Bug Fix:          Trellis - Fixing digital triggering (which broke in the previous release)
+
+
+[1.4.1] - 2014/08/03
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.4.x ***
+=================================================================
+Feature:        SpikeGrid - Heat Map
+Feature:      Stimulation - Stim score play launches a separate window with a button that is a safety switch for stopping stimulation at any time.
+Feature:          Trellis - Major performance improvements
+Feature:     Trellis Apps - Major performance improvements
+Feature:        File Save - Added NIP time at file start to NEV, NSx, and NFx file header
+Feature:       neuroshare - Added function to retrieve NIP time at file start
+Bug Fix:      Stimulation - App crashes when loading a second stimulation configuration file
+Bug Fix:      Stimulation - Some frequencies (such as 30 Hz) cause errors when playing score stimulation
+Bug Fix:          xippmex - Major memory leak 
+Bug Fix:          xippmex - 'signal' command returns empty strings
+Bug Fix:          xippmex - Can't close xippmex after error
+Bug Fix:          xippmex - global stim disable occurs at wrong time
+Bug Fix:          xippmex - signal can cause seg fault
+Bug Fix:          xippmex - cannot enable/disable 'stim' data stream on per-channel basis
+Bug Fix:          xippmex - filter 'custom' elec off by one
+Bug Fix:          xippmex - surf D v1.3 hi-res stream producing all 0s when using 'cont' function
+Bug Fix:          xippmex - 'stim' command doesn't handle spaces in string
+Bug Fix:          xippmex - fails to initialize for NIP with no headstages
+
+
+[1.4.0] - 2014/04/08
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.4.x ***
+=================================================================
+Feature:          Trellis - Interface to link front end fast settle behavior to digital inputs, stimulation, signal saturation, and user input
+Feature:          Trellis - Configuration save/load now supports restoring tracking settings in Analog/Digital output tracking interface
+Feature:          Trellis - New interface to select signal filters in instrument details panel 
+Feature:          Trellis - Support for color schemes (light-on-dark and dark-on-light)
+Feature:          xippmex - Support for MATLAB-based interaction with Grapevine and Trellis
+Feature:        File Save - Support for new "hi-res" float-32 streams
+Bug Fix:        File Save - Some form fields were overwriting user input
+Bug Fix:      Stimulation - NIP clock and Trellis CPU clock were not synchronized
+Bug Fix:      Stimulation - Stimulation trains stopped unexpectedly after 4095 (0xFFF) pulses
+
+
+[1.3.0] - 2013/07/01 (BETA)
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.3 ***
+=================================================================
+New App:      Stimulation - Provides an interface for controlling stimulation on Ripple's micro+stim front ends 
+New App:        Impedance - Supports measuring and recording of impedance on micro and surfS front ends
+Feature:             Apps - State persistence (i.e. When opened Apps restore themselves to the last used settings)
+Feature:      Spike Scope - New electrode map file format.
+Feature:      Spike Scope - Ability to set display scale at a per view level
+Feature:          Trellis - Input-to-output Network latency test (requires wrap-around SMA cable)
+Feature:          Trellis - NIP status monitoring. User is notified if Trellis restarts with new/different hardware configuration 
+Feature:        File Save - NIP status monitoring. User is notified if interruption in network connection is detected
+Feature:        File Save - NIP status monitoring. Recording is stopped if NIP restart is detected
+Bug Fix:           Raster - Changed spike rendering code to ensure proper alignment with respect to continuous channels 
+New Doc:          Trellis - Trellis user manual ([trellis_install_dir]/Trellis/Documentation/Grapevine/GrapevineNIP.pdf)
+New Tool:        Wisteria - Matlab-based application for viewing files recorded in the NEV/NSx2.2 file format ([trellis_install_dir]/Trellis/Tools/wisteria)
+New Tool:          MKsort - Open source Matlab-based spike sorter. Supports NEV and NS5 data file format ([trellis_install_dir]/Trellis/Tools/mksort)
+
+
+[1.2.1] - 2013/02/22
+=================================================================
+Bug Fix:         FileSave - Fixed bug that occasionally caused recordings to become very large
+
+
+[1.2.0] - 2013/01/09
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.2 ***
+=================================================================
+Feature:         Trellis  - Support for new Scout NIP
+Feature:         FileSave - Added support for saving stimulation waveforms
+Feature:         Trellis  - Checkbox for toggling whether nip captures digital input on parallel port bit change
+Bug Fix:         FileSave - (Mac/Linux) month and day in "Time Origin" field in NEV Neuralev header now 1-indexed
+
+
+[1.1.1] - 2012/10/11
+=================================================================
+Bug Fix:        File Save - Fixed *CRITICAL* error which had potential to cause data loss
+
+
+[1.1.0] - 2012/09/28
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.1 ***
+=================================================================
+Feature:       NIP Config - Ability to configure fast settle/recovery of recording after stimulation
+Feature:       NIP Config - Minor UI changes
+Feature:        File Save - Ability to save individual channels from micro/nano/surf front ends
+Feature:        Simulator - Supports NIP Grapevine software version 1.1
+Feature:        Simulator - Ability to save simulation configurations
+Bug Fix:       NIP Config - Spike event triggered digital output not working
+Bug Fix:       NIP Config - Audio output tracking did not update when Trellis not displaying the "Instruments" tab
+Bug Fix:        File Save - Signal selection reverted to default when Digital or Analog signal routing UI changed
+Bug Fix:        File Save - Incorrect large timestamps at beginning of NEV files
+Bug Fix:        Matlab NS – ns_GetEventData returned wrong data
+Bug Fix:        Python NS – Import of large NEV files failed
+Bug Fix:        Python NS – Internal NEV cache data unnecessarily large
+
+
+[1.0.0] - 2012/08/10
+=================================================================
+*** NOTE: REQUIRES Grapevine Software Version 1.0 ***
+=================================================================
+Feature:        File Save - Trigger file save start/stop pause/unpause with digital input
+Feature:        File Save - Specify individual front ends(s) to save data for
+Feature:        File Save - Specify subset of analog input channels to save data for
+Feature:        File Save - Save NIP configuration with data files
+Feature:        File Save - Display of currently recording files
+Feature:        File Save - Display of previously recorded files
+Feature:       NIP Config - Ability to save/load Instrument configurations
+Feature:       NIP Config - Global auto thresholding (micro electrode front ends)
+Feature:       NIP Config - UDP-control of digital output
+Feature:       NIP Config - Digital output loopback
+Feature:       NIP Config - Turn on/off individual front end inputs
+Feature:       Trellis UI - Minor changes to layout and look of various components.
+Feature:      Spike Scope - Dual thresholding
+Feature:      Spike Scope - Spike sorting
+Feature:           Raster - User specified arrangement of signals
+Feature:           Raster - Signal coloring
+Feature:            Tools - pyns (Python-native implementation of neuroshare API for Nev/NSx files) see Trellis/Documentation/python/pyns/pyns.pdf
+Feature:            Tools - matlab-native implementation of neuroshare API for Nev/NSx files see Trellis/Tools/matlab/neuroshare
+Feature:            Tools - matlab example scripts see Trellis/Tools/matlab/scripts
+Feature:          General - Official Trellis install package for Linux
+
+
+[0.9.9] - 2012/02/17
+=================================================================
+Feature:        File Save - Supports recording SurfD front end data
+Feature:          Trellis - Info and error logging (<trellis_install_dir>\Apps\Trellis\bin\trellis.log)
+Feature:       Trellis UI - Minor layout changes
+
+
+[0.9.8] - 2012/01/20
+=================================================================
+Feature:        File Save - Remote control over instrument network
+Feature:        File Save - Option to play tone when recording starts and stops (for video synchronization)
+Feature:       Trellis UI - Several UI changes to improve usability
+Feature:    Trellis Tools - XippMin project for external Trellis integration support (see: <install_dir>/Tools/XippMin)
+Feature:            Build - Release notes added to install package
+
+
+[0.9.7] - 2011/12/23
+=================================================================
+Feature:        File Save - Analog signals can be saved at 1k (i.e. downsampled from 30k).
+Feature:        File Save - Trellis version information inserted into NEURALEV header (*.NEV) file and prepended to comment field in NEURALCD header (*.NSx)
+        
+Bug Fix:      Spike Scope - Threshold edit field not refreshing when focus is lost
+Bug Fix:       Spike Grid - Arrow key navigation causes crash.
+Bug Fix:        File Save - Erroneous timestamps on first few spikes.
+
+
+[0.9.6] - 2011/12/05
+=================================================================
+Internal Release
+
+
+[0.9.5] - 2011/11/10
+=================================================================
+Internal Release
+
+
+[0.9.4] - 2011/10/28
+=================================================================
+Feature:        File Save - NEV/NSx 2.2 added support for saving raw microelectrode signals
+Feature:        File Save - NEV/NSx 2.2 added support for saving digital packets
+           
+Bug Fix:        File Save - NEV/NSx 2.2 header information corrected
+
+
+[0.9.3]
+=================================================================
+Bug Fix:        File Save - synchronization of spike and continuous data
+
+
+[0.9.2]
+=================================================================
+Feature:     Trellis - Digital output routing
+
+Bug Fix:        File Save - scale factors and filter settings now correctly saved in NEV/NSx files
+Bug Fix:       Spike Grid - improved app load speed
+Bug Fix:      Spike Scope - preview pane now redraws itself instead of clearing history on window resize
